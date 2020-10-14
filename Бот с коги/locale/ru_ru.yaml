@@ -1,0 +1,351 @@
+#[ Silentic Translation: Russian language
+#[ Author: artem-6191
+language-info:
+    name: "ru_ru"
+    aliases:
+        - ru
+        - russian
+        - rus
+        - русский
+    author: "artem-6191"
+
+
+# Errors
+errors.timeout: "Тайм-аут"
+errors.disabled_command: "Команда ``{ctx.command.name}`` на данный момент отключена"
+errors.max_balance: "Достигнут максимальный баланс! ({max_balance})"
+errors.missing_permissions: "У вас отсуствуют данные права для выполнения команды {command}:\n```fix\n{missing_perms}\n```"
+erorrs.happend_error: "Произошла непредвиденная ошибка..."
+erorrs.happend_error.description: "Но не волнуйтесь, ошибка отправлена моим разработчикам и в скором времени будет исправлена."
+errors.on_cooldown: "Данная команда использует задержку. Повторите позже через {time}"
+errors.guild_only: "Команда **{ctx.command}** может быть выполнена только на сервере!"
+errors.dm_only: "Команда **{ctx.command}** может быть выполнена только в ЛС"
+errors.leveling_is_disabled: "Уровни на этом сервере отключены!"
+errors.credits_is_disabled: "Кредит на этом сервере запрещён!"
+errors.command_is_disabled_on_this_server: "Команда ``{ctx.command.name}`` отключена на этом сервере"
+
+### < Commands >
+
+# destroytoken command
+destroytoken.desc: "Нашли чей-то токен? Через эту команду вы можете его уничтожить"
+destroytoken.unknown: "Неизвестный токен"
+destroytoken.ok: "Токен бота **{username}** прибит"
+
+# suggest command
+suggest.desc: "Появилась идея для улучшения бота? Сообщите её нам!"
+suggest.sent: "Ваша идея успешно отправлена."
+suggest.sent.desc: "Спасибо вам за то, что пытаетесь помочь нам с улучшением бота.\n\n[Саппорт сервер](https://discord.gg/j2KZZSa)"
+
+# Help command
+help.commandNotFound: "Не удалось найти команду {command}"
+help.nothing: "Нету"
+help.command.subcommands: "Подкоманды"
+help.cog.commands: "Команды"
+help.desc: "Список команд"
+
+#botinfo command
+botinfo.desc: "Получить информацию о боте (Требуется указать цифровой ID бота)"
+botinfo.loading: "Загрузка информации..."
+botinfo.unknown: "Не удалось найти информацию про этого бота"
+botinfo.application: "Информация про приложение"
+botinfo.application.name: "Имя"
+botinfo.application.summary: "Описание"
+botinfo.bot: "Информация про бота"
+botinfo.bot.public: "Публичный?"
+botinfo.bot.require_code_grant: "Требует OAuth2 код для добавления?"
+botinfo.bot.name: "Ник, ID бота"
+botinfo.bot.guild_count: "Примерное количество серверов"
+
+# embedcolor command
+embedcolor.desc: "Настройка цвета эмбеды для вас"
+embedcolor.not_set: "Не установлен"
+embedcolor.yourcolor: "Ваш цвет эмбеды - {color}"
+embedcolor.changed: "Цвет эмбеды успешно сменён"
+embedcolor.invalid: "Неверный цвет!"
+embedcolor.howTo: "Используйте {ctx.prefix}embedcolor [цвет] для установки цвета эмбеды."
+
+# prefix command
+prefix.desc: "Смена префикса боту"
+prefix.self: "Ваш префикс"
+prefix.self.howTo: "Для установки восспользуйтесь `{ctx.prefix}prefix self <новый префикс>`"
+prefix.guild: "Префикс сервера"
+prefix.guild.howTo: "Для установки восспользуйтесь `{ctx.prefix}prefix guild <новый префикс>`"
+prefix.howToReset: "Для сброса префикса восспользуйтесь `{ctx.prefix}prefix self/guild reset`"
+prefix.not_set: "Не установлен"
+prefix.set.reset: "{type} сброшен"
+prefix.set.ok: "{type} установлен на **{prefix}**"
+prefix.type.guild: "Префикс сервера"
+prefix.type.self: "Ваш префикс"
+
+# credits command
+credits.desc: "Выражаем благодарность:"
+credits.developers: "Разработчикам:"
+credits.hosters: "Хостерам:"
+credits.translators: "Переводчикам:"
+
+# Language command
+language.yourLang: "Ваш язык - {language}"
+language.howTo: "Используйте {ctx.prefix}language [new_language] для смены языка"
+language.unknownLang: "Неизвестный язык - {language}. Доступные языки:\n```\n{languageList}\n```"
+language.successful: "Язык успешно сменён на {language}"
+language.name: "русский"
+language.desc: "Команда используемая для смены вашего языка"
+
+# bottraannslate command
+bottl.desc: "[описание команды не установлено]"
+bottl.submit.desc: "Отправить заявку на перевод бота\nТребуется прикрепления (YAML-файл) и имя языка"
+bottl.submit.ok: "Заявка на перевод отправлена. Спасибо вам за то что пытаетесь помочь нам с переводом бота!"
+bottl.get.desc: "Получить YAML-файл указанного языка"
+bottl.format.desc: "`(Инструмент переводчика)` Позволяет вам отформатировать строку для определённого языка.
+\nПримеры:
+\n`bottranslate format ru_ru help.desc`: 'Список команд'
+\n`bottranslate format ru_ru help.commandNotFound {{ \"command\": \"hello\" }}`: 'Не удалось найти команду hello'
+\n`bottranslate format uk_ua help.commandNotFound {{ \"command\": \"hello\" }}`: 'Не вдалось знайти команду hello'
+"
+
+### < Moderation >
+
+# warnconfig command
+mod.warnconfig.desc: "Настройки для варнов"
+mod.warnconfig.warnId: "При {id} варне: "
+mod.warnconfig.action_list: "Список действий"
+mod.warnconfig.action.not_set: "Не установлено"
+mod.warnconfig.action.mute: "Мут"
+mod.warnconfig.action.kick: "Кик"
+mod.warnconfig.action.ban: "Бан"
+mod.warnconfig.action.none: "Ничего не делать"
+mod.warnconfig.incorrect_action: "Неизвестное действие! Доступные действия - `mute`, `kick`, `ban`, `none`"
+mod.warnconfig.incorrect_id: "Укажите **верный** ID варна от 1 до 10."
+mod.warnconfig.set: "Действие при {id} варне установлено на `{action}`"
+
+# warn command
+mod.warn.warned.title: "Вам был выдан варн на сервере ``{ctx.guild.name}``"
+mod.warn.warned.moderator: "Модератор: {ctx.author.mention}"
+mod.warn.warned.reason: "Причина: ```\n{reason}\n```"
+mod.warn.ok: "**{user}** успешно заварнен"
+mod.warn.limit_reached: "У **{user}** достигнут лимит варнов!"
+mod.warn.fail: "Вы не можете выдать варн тому, у кого роль выше вашей!"
+mod.warn.desc: "Выдать кому-то варн"
+
+### < Economy >
+
+# work command
+eco.work.texts.items: # Work texts: items
+    - CSS # Do not translate this
+    - HTML # Do not translate this
+    - PHP # Do not translate this
+    - Python # Do not translate this
+    - C# # Do not translate this
+    - C++ # Do not translate this
+    - Lua # Do not translate this
+    - айфон
+    - гугл
+    - ютуб
+    - телеграм
+    - телефон
+    - Xiaomi # Do not translate this
+    - компьютер
+    - видеокарту
+    - процессор
+    - майнкрафт
+    - террарию
+    - дискорд
+    - Firefox # Do not translate this
+    - Chrome # Do not translate this
+    - GitHub # Do not translate this
+    - GitLab # Do not translate this
+    - Windows # Do not translate this
+    - Ubuntu # Do not translate this
+    - Debian # Do not translate this
+    - терминал
+    - mastercard # Do not translate this
+    - paypal # Do not translate this
+    - школу
+    - SyntaxError # Do not translate this
+    - магазин
+    - коронавирус
+    - артефакт "Тупой пожиратель летучих мышей" AKA создатель коронавируса
+eco.work.texts.places1: # Work texts: places #1
+    - Украины
+    - России
+    - Англии
+    - Германии
+    - Китая
+    - Франции
+    - Испании
+    - США
+    - Турции
+    - Мексики
+    - Тайланда
+    - Египета
+    - Алжира
+    - Ирана
+    - Израиля
+    - Японии
+eco.work.texts.places2: # Work texts: places #2
+    - банка
+    - 'казны {place1}'
+    - 'банка {place1}'
+    - магазина
+eco.work.texts.all: # Work texts: templates
+    - 'Вы помогли стране {place1} заблокировать {item}, за что получили выплату в размере {coins} монет'
+    - 'Вы помогли роскомнадзору заблокировать {item} и получили {coins} монет'
+    - 'Вы починили {item} и получили {coins} монет'
+    - 'Вы выиграли 1 миллион монет в лотерее но по дороге вас обокрали и у вас осталось лишь {coins} монет'
+    - 'Вам повезло и вы выиграли {coins} монет в лотерее'
+    - 'Вам подарили {coins} монет!'
+    - 'Вы украли {coins} монет из {place2}.'
+    - 'Вы помыли посуду в ресторане и получили {coins} монет'
+    - 'Прогуливаясь по лесу вы нашли {item}, а в нём было {coins} монет'
+    - 'Прогуливаясь по лесу вы нашли {item}, а в нём было 1 млн монет, но вам пришлось вложить половину из них в ремонт школы {place1}, поэтому у вас осталось лишь {coins} монет'
+    - 'Вы взломали пентагон и продали его данные за {coins} монет'
+    - 'Вы продали {item} за {coins} монет'
+    - 'Вы нашли {coins} монет прогуливаясь по окресностям {place1}'
+    - 'Вы нашли кейс с 1 млрд монет, но половина из них ушла на долги, поэтому у вас осталось лишь {coins} монет.'
+    - 'Вы починили {item} за {coins} монет'
+    - 'Вы сделали {item} за {coins} монет'
+    - 'Вы нашли {item} и продали его {coins} монет'
+    - 'Делая уборку в своём доме вы нашли копилку с {coins} монетами'
+    # Easter Eggs:
+    - 'Вы взломали себя и продали себя за тебя (+{coins} монет)'
+    - 'Вы нашли {place1} прогуливаясь по монетам (+{coins} монет)'
+eco.work.boost: "Буст x{boost}"
+eco.work.boost.got: "+{amount} монет"
+eco.work.desc: "Сходить на работу\n\nДоступно раз в 2 часа"
+    
+# Balance command
+eco.balance.desc: "Узнать чей-то баланс"        
+eco.balance.coins: "Баланс: {coins}"
+eco.balance.bank: "Долг: {bank}"
+eco.balance.fail: "Боты не могут иметь баланс!"
+
+# pay command
+eco.pay.desc: "Отправить кому-то деньги"
+eco.pay.fail.0: "Укажите сумму больше чем 10 монет!"
+eco.pay.fail.1: "Вы не можете отправлять деньги ботам!"
+eco.pay.fail.2: "Вы не можете отправлять деньги самому себе!"
+eco.pay.fail.3: "Недостаточно денег!"
+eco.pay.confirm: "Вы уверенны что хотите отправить {user} {amount} монет?"
+eco.pay.ok: "Успешно отправлено."
+
+# lottery command
+eco.lottery.desc: "Сыграть в лотерею\n\nДоступно раз в полминуты"
+eco.lottery.fail.0: "Недостаточно монет!"
+eco.lottery.fail.1: "Минимальная сумма - 45 монет"
+eco.lottery.won: "Вы выиграли **{coins}** монет"
+eco.lottery.lose: "Вы проиграли **{coins}** монет"
+eco.lottery: "Лотерея"
+
+# respect command
+eco.respect.desc: "Повысить репутацию указанному пользоввателю\n\nДоступно раз в 24 часа"
+eco.respect.fail.0: "Вы не можете повышать репутацию самому себе!"
+eco.respect.fail.1: "Вы не можете повышать репутацию ботам!"
+eco.respect.ok: "Репутация **{user}** повышена. (+0.1)"
+
+# credit command
+eco.credit.desc: "Кредит"
+eco.credit.pay.desc: "Оплатить долги"
+eco.credit.pay.fail: "Недостаточно денег! Для оплаты долгов требуется {amount} монет."
+eco.credit.pay.ok: "Долги оплачены."
+eco.credit.claim.desc: "Взять кредит"
+eco.credit.claim.fail.already: "Чтобы взять кредит вам нужно оплатить долги!"
+eco.credit.claim.fail.tooBig: "Сумма не должна перевышать 1000 монет!"
+eco.credit.claim.fail.tooSmall: "Сумма должна быть больше чем 10 монет!"
+eco.credit.claim.ok: "Кредит взят."
+eco.credit.claim.ok.footer: "Примечание: Желательно оплатить кредит как можно скорее, так как сумма возврата возрастает с каждым часом!"
+eco.credit.status.desc: "Статус кредита"
+eco.credit.status.not_claimed: "У вас нету никаких долгов."
+eco.credit.status.total: "Сумма кредита/долгов"
+eco.credit.status.pay: "К оплате"
+eco.credit.status.time_passed: "Прошло часов"
+
+
+## Shop group:
+# Shop
+eco.shop.desc: "Магазин"
+eco.shop.boost.title: "Буст"
+eco.shop.boost.desc: "Умножает заработок в work"
+eco.shop.boost.cost: "Стоимость: 1000 монет"
+eco.shop.howTo: "Чтобы что-то купить восспользуйтесь {ctx.prefix}shop buy {{предмет}}"
+eco.shop.guild.role: "Роль <@&{roleID}>"
+eco.shop.guild: "Магазин сервера"
+eco.shop.cost: "Стоимость: {cost} монет"
+
+# Buy
+eco.shop.buy.desc: "Купить что-то из магазина"
+eco.shop.buy.not_enough: "У вас недостаточно денег!"
+eco.shop.buy.unknown: "Неизвестный предмет - {item}. Доступные товары:"
+eco.shop.buy.ok: "Товар ``{item}`` успешно приобретён!"
+eco.shop.buy.error.boost: "У вас уже максимальный уровень буста!"
+eco.shop.buy.confirm: "Вы уверены что хотите купить предмет ``{item}``? Это действие не может быть отменено."
+
+# Addrole
+eco.shop.addrole.desc: "Добавить роль в магазин сервера\n\nТребуется право на управление ролями"
+eco.shop.addrole.missing_permissions: "У вас отсуствуют права для добавления этой роли или эта роль выше вашей"
+eco.shop.addrole.exists: "Роль уже находится в магазине!"
+eco.shop.addrole.minimum_cost: "Минимальная стоимость - 10 монет"
+eco.shop.addrole.maximum_cost: "Макс. стоимость - {value} монет"
+eco.shop.addrole.ok: "Роль добавлена в магазин сервера"
+# Removerole
+eco.shop.removerole.desc: "Убрать роль из магазина сервера\n\nТребуется право на управление ролями"
+eco.shop.removerole.missing_permissions: "У вас отсуствуют права для удаления этой роли или эта роль выше вашей"
+eco.shop.removerole.unknown: "Роль не находится в магазине!"
+eco.shop.removerole.ok: "Роль убрана из магазина сервера"
+
+
+# leaderboard
+eco.top: "Лидеры по монетам"
+eco.top.fail: "На этом сервере ещё никто не имеет профиль."
+eco.top.you: "Ваше место в топе: {place} | Ваш баланс: {bal}"
+eco.top.bal: "{place}) **{user}**: {balance} монет"
+
+## Eco management
+
+eco.setbal.desc: "Установить баланс указанному пользователю на этом сервере"
+eco.givebal.desc: "Добавить к пользователю указанное кол-во монет"
+eco.removebal.desc: "Убрать у пользователя указанное кол-во монет"
+eco.setrep.desc: "Установить пользователю репутацию"
+eco.setboost.desc: "Установить пользователю буст"
+eco.resetcd.desc: "Сбросить весь кулдаун на этом сервере"
+eco.resetcd.confirm: "Вы уверены что хотите сбросить весь кулдаун на этом сервере?"
+
+## Config: "rule" group
+rule.lvl.desc: "Разрешить систему уровней?"
+rule.lvl.enabled: "Система уровней включена"
+rule.lvl.disabled: "Система уровней выключена"
+rule.lvl.enabled.howTo: "Чтобы выключить систему уровней пропишите {ctx.prefix}rule enable-lvl 0"
+rule.lvl.disabled.howTo: "Чтобы включить систему уровней пропишите {ctx.prefix}rule enable-lvl 1"
+rule.credit.desc: "Разрешить `credit`?"
+rule.credit.enabled: "Кредиты разрешены"
+rule.credit.disabled: "Кредиты запрещены"
+rule.credit.enabled.howTo: "Чтобы запретить кредиты пропишите {ctx.prefix}rule allow-credit 0"
+rule.credit.disabled.howTo: "Чтобы разрешить кредиты пропишите {ctx.prefix}rule allow-credit 1"
+rule.cooldown.desc: "Настройки кулдауна"
+rule.cooldown.list: "Кулдаун для команд"
+rule.cooldown.ok: "Задержка для {command} установлена на {sec} секунд"
+rule.cooldown.notSet: "[Не установлен]"
+rule.cooldown.tip: "Установив кулдаун на -1 команда будет отключена."
+
+### < Leveling >
+lvl.new_level: "**{ctx.author.display_name}**, вы достигли {lvl} уровня!"
+lvl.level: "Уровень: {lvl}"
+lvl.xp: "XP: {xp}/{xp_needed}"
+
+### < Cogs >
+cogs.info.doc: "Информация"
+cogs.info.desc: "Команды информации"
+cogs.config.doc: "Настройки"
+cogs.config.desc: "Команды, используемые для настройки вашего собственного профиля и вашего сервера"
+cogs.tools.doc: "Утилиты"
+cogs.tools.desc: "Команды утилит"
+cogs.mod.doc: "Модерация"
+cogs.mod.desc: "Команды модерации"
+cogs.economy.doc: "Экономика"
+cogs.economy.desc: "Команды экономики"
+
+### < Other >
+paginator.page: "Страница"
+humanize.i18n: ru_RU
+ctx.confirm: "Подтвердите действие для команды {command}"
+ctx.confirm.cancel: "Отменено"
+none: null

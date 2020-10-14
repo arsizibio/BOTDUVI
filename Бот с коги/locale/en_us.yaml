@@ -1,0 +1,137 @@
+#[ Silentic Translation: English language
+#[ Author: artem-6191
+language-info:
+    name: "en_us"
+    aliases:
+        - en
+        - eng
+        - englishn
+    author: artem-6191
+# Errors
+errors.timeout: "Timed Out"
+errors.disabled_command: "Command ``{ctx.command.name}`` is currently disabled "
+errors.max_balance: "Maximum balance reached ! ({max_balance})"
+errors.missing_permissions: "You are missing those permissions to run this command:\n```fix\n{missing_perms}\n```"
+
+### < Commands >
+
+# Help command
+help.commandNotFound: "Cloudn't find command {command}"
+help.nothing: "None"
+help.command.subcommands: "Sibcommands"
+help.cog.commands: "Commands"
+help.desc: "Command list "
+
+#botinfo command
+botinfo.desc: "Get application info of some bot (An numeric ID of the bot required)"
+botinfo.loading: "Loading information..."
+botinfo.unknown: "Cloudn't find this bot"
+botinfo.application: "Application info"
+botinfo.application.name: "Name"
+botinfo.application.summary: "Description"
+botinfo.bot: "Bot info"
+botinfo.bot.public: "Public?"
+botinfo.bot.require_code_grant: "OAuth2-code grant required?"
+botinfo.bot.name: "Nickname and ID of the bot"
+botinfo.bot.guild_count: "Guild count"
+
+# credits command
+credits.desc: "Special thanks to:"
+credits.developers: "Developers:"
+credits.hosters: "Hosters:"
+credits.translators: "Translators:"
+
+# Language command
+language.yourLang: "Your language - {language}"
+language.howTo: "Use {ctx.prefix}language [new_language] to change your language"
+language.unknownLang: "Unknown language - {language}. All languages:\n```\n{languageList}\n```"
+language.successful: "Language successfully changed to {language}"
+language.name: "english"
+language.desc: "Command used to change your bot's language "
+
+# bottraannslate command
+bottl.desc: "[description not set]"
+bottl.submit.desc: "Submit translation request\nRequired an attachment (YAML file) with language name"
+bottl.submit.ok: "Translation request sent. Thx to you for helping us to improve the bot!"
+bottl.get.desc: "Get the YAML-file of specified language"
+
+
+### < Moderation >
+
+# warnconfig command
+mod.warnconfig.desc: "Warn configuration"
+mod.warnconfig.warnId: "When {id} warn reached: "
+mod.warnconfig.action_list: "Action list"
+mod.warnconfig.action.not_set: "Not set"
+mod.warnconfig.action.mute: "Mute"
+mod.warnconfig.action.kick: "Kick"
+mod.warnconfig.action.ban: "Ban"
+mod.warnconfig.action.none: "None"
+mod.warnconfig.incorrect_action: "Unknown action! Available actions - `mute`, `kick`, `ban`, `none`"
+mod.warnconfig.incorrect_id: "Please, specify **correct** warn ID from 1 до 10."
+mod.warnconfig.set: "Action for {id} warn was successfully set to `{action}`"
+
+# warn command
+mod.warn.warned.title: "You have been warned on ``{ctx.guild.name}``"
+mod.warn.warned.moderator: "Moderator: {ctx.author.mention}"
+mod.warn.warned.reason: "Reason: ```\n{reason}\n```"
+mod.warn.ok: "**{user}** has been warned"
+mod.warn.limit_reached: "**{user}** has reached warn limit!"
+
+### < Economy >
+
+# work command
+eco.work.texts.all:
+    - 'You got {coins} coins from work'
+eco.work.boost: "Boost x{boost}"
+eco.work.boost.got: "+{amount} coins"
+eco.work.desc: "Work command"
+    
+# Balance command
+eco.balance.desc: "Get someone's balance"        
+eco.balance.coins: "Balance: {coins}"
+eco.balance.bank: "Debt: {bank}"
+
+# credit command
+eco.credit.desc: "Credit"
+eco.credit.claim.desc: "Claim credit"
+eco.credit.claim.fail.already: "You need to pay a previous credit to take a new one!"
+eco.credit.claim.fail.tooBig: "Credit amount cannot be highter than 1000 coins!"
+eco.credit.claim.ok: "Credit was successfully claimed!"
+eco.credit.claim.ok.footer: "Note: It is advisable to pay the credit as soon as possible, since the amount of repayment increases every hour!"
+eco.credit.status.desc: "Credit status"
+eco.credit.status.not_claimed: "You are not claimed the credit!"
+eco.credit.status.total: "Credit amount"
+eco.credit.status.pay: "To pay"
+eco.credit.status.time_passed: "Hours passed"
+
+## Shop group:
+# Shop
+eco.shop.desc: "Shop"
+eco.shop.boost.title: "Boost"
+eco.shop.boost.desc: "Multiplies earnings in the `work` command"
+eco.shop.boost.cost: "Cost: 1000 coins"
+# Buy
+eco.shop.buy.desc: "Buy something from shop"
+eco.shop.buy.not_enough: "You don't have enough money!"
+eco.shop.buy.unknown: "Unknown item - {item}. All items:"
+eco.shop.buy.ok: "Item ``{item}`` was successfully bought!"
+eco.shop.buy.error.boost: "You already have maximum boost!"
+
+### < Cogs >
+cogs.info.doc: "Information"
+cogs.info.desc: "Information commands"
+cogs.config.doc: "Settings"
+cogs.config.desc: "Commands used to customize your own profile and server"
+cogs.tools.doc: "Tools"
+cogs.tools.desc: "Some useful tools"
+cogs.mod.doc: "Moderation"
+cogs.mod.desc: ""
+cogs.economy.doc: "Economy"
+cogs.economy.desc: ""
+
+### < Other >
+paginator.page: "Page"
+humanize.i18n: null
+ctx.confirm: "Confirm action for command {command}"
+ctx.confirm.cancel: "Cancelled"

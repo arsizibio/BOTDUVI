@@ -1,0 +1,404 @@
+
+# Translated by TL 21.05.2020
+# Last update 24.05.2020
+
+#				TECHNICAL TRANSLATE: AWAITED STRUCTURIZE
+
+
+##################################GLOBAL
+
+errors.timeout: "Таймаут."
+
+errors.disabled_command: "Команда ``{ctx.command.name}`` в цей момент недоступна."
+
+errors.missing_permissions: "Для виконання команди *`{command}`* необхідні наступні права:\n```fix\n{missing_perms}\n```"
+
+erorrs.happend_error: "Викликано невідому помилку."
+
+erorrs.happend_error.description: "Дані про помилку вже повідомлені розробникам."
+
+errors.on_cooldown: "Ця команда використовує затримку, повторне використання можливе через {time}."
+
+errors.guild_only: "Команда **{ctx.command}** доступна для виконання лише на сервері!"
+
+errors.dm_only: "Команда **{ctx.command}** доступна до виконання лише в особистих повідомленнях з ботом!"
+
+paginator.page: "Сторінка"
+
+humanize.i18n: "uk_UA"
+
+ctx.confirm: "Ви дійсно хочете виконати дію команди `{command}`?"
+
+ctx.confirm.cancel: "Виконання команди скасоване"
+
+language-info:
+    name: "uk_UA"
+    aliases:
+        - uk_ua
+        - ukr
+        - uk
+        - ua
+        - ukraininan
+    author: "TL"
+
+##################################COMMANDS
+
+#                                 HELP COMMAND
+
+help.commandNotFound: "Не вдалось знайти команду {command}"
+
+help.nothing: "None"
+
+help.command.subcommands: "Підкоманди"
+
+help.cog.commands: "Команди"
+
+help.desc: "Список команд"
+
+#                                 LANGUAGE COMMAND
+
+language.yourLang: "Встановлена мова - українська"
+
+language.howTo: "Використовуйте {ctx.prefix}language [нова_мова], щоб змінити вашу мову."
+
+language.unknownLang: "Невідома мова - {language}. Наявні мови:\n```\n{languageList}\n```"
+
+language.successful: "Мову успішно змінено на {language}"
+
+language.name: "українську"
+
+language.desc: "Використовуйте цю команду для зміни мови звернення до вас зі сторони бота."
+
+#                                 BOTTL COMMAND
+
+bottl.desc: "Робота з перекладами бота."
+
+bottl.submit.desc: "Відправити заявку на переклад бота. 
+  Необхідно прикріпити файл .yaml розширення та вказати назву перекладу." # submit subcommand
+
+bottl.submit.ok: "Заявка на переклад відправлена. Спасибі за вклад в розвиток бота."
+
+bottl.get.desc: "Отримати файл перекладу у розширенні .yaml" # get subcommand
+
+bottl.format.desc: "`(Інструмент перекладача)` Отримати приклад тої чи іншої лінії з перекладів.
+\nЗразки:
+\n`bottranslate format ru_ru help.desc`: 'Список команд'
+\n`bottranslate format ru_ru help.commandNotFound {{ \"command\": \"hello\" }}`: 'Не удалось найти команду hello'
+\n`bottranslate format uk_ua help.commandNotFound {{ \"command\": \"hello\" }}`: 'Не вдалось знайти команду hello'
+"
+
+#                                 WARNCONFIG COMMAND
+
+mod.warnconfig.desc: "Налаштування для попереджень"
+
+mod.warnconfig.warnId: "При {id}ому попередженні: "
+
+mod.warnconfig.action_list: "Список дій"
+
+mod.warnconfig.action.not_set: "Не налаштовано"
+
+mod.warnconfig.action.mute: "Заглушити"
+
+mod.warnconfig.action.kick: "Виключити"
+
+mod.warnconfig.action.ban: "Заблокувати"
+
+mod.warnconfig.action.none: "Нічого не робити"
+
+mod.warnconfig.incorrect_action: "Невідома міра модерації. Доступні - `mute`, `kick`, `ban`, `none`"
+
+mod.warnconfig.incorrect_id: "Вкажіть **дійсний** ID попередження від 1 до 10."
+
+mod.warnconfig.set: "Дія при {id}ому попередженні - `{action}`"
+
+#                                   WARN COMMAND
+
+mod.warn.warned.title: "На сервері ``{ctx.guild.name}`` вам було видане попередження"
+
+mod.warn.warned.moderator: "Модератор: {ctx.author.mention}"
+
+mod.warn.warned.reason: "Причина: ```\n{reason}\n```"
+
+mod.warn.ok: "**{user}** успішно попереджений"
+
+mod.warn.limit_reached: "**{user}** досягнув ліміт попередженнь!"
+
+mod.warn.fail: "Ви не можете попередити того, чия найвища роль вище за вашу чи еквівалентна ній!"
+
+mod.warn.desc: "Попередити учасника."
+
+#                                 WORK COMMAND
+
+eco.work.texts.items:
+    - CSS # Do not translate this
+    - HTML # Do not translate this
+    - PHP # Do not translate this
+    - Python # Do not translate this
+    - C# # Do not translate this
+    - C++ # Do not translate this
+    - Lua # Do not translate this
+    - IPhone
+    - Google
+    - YouTube
+    - Telegram
+    - телефон
+    - Xiaomi
+    - комп'ютер
+    - відеокарту
+    - процессор
+    - Minecraft
+    - Terraria
+    - Discord
+    - Firefox # Do not translate this
+    - Chrome # Do not translate this
+    - GitHub # Do not translate this
+    - GitLab # Do not translate this
+    - Windows # Do not translate this
+    - Ubuntu # Do not translate this
+    - Debian # Do not translate this
+    - термінал
+    - Mastercard # Do not translate this
+    - PayPal # Do not translate this
+    - школу
+    - SyntaxError # Do not translate this
+    - магазин
+    - коронавірус
+    - артефакт "пожирач живності, зокрема кажанів", відомий як шалений вчений що вивів штам коронавірусу в секретних біолабораборіях створених за рахунок Білла Ґейтса
+    - ліцензію WinRar
+    - ToS Discord
+    - Політику неКонфіденційності Facebook
+    - кошачу іграшку для собак
+    - хом'яка
+    - кулер
+    - цей перклад
+
+eco.work.texts.places1:
+    - України
+    - Росії
+    - Великобританії
+    - Німеччини
+    - Китаю
+    - Антарктиди
+    - Щурляндії
+    - Ґрендляндії
+    - ДР Конго
+    
+eco.work.texts.places2:
+    - банку
+    - 'казни {place1}'
+    - 'банку {place1}'
+    - магазину
+    - маєтку вашого мера
+    - маєтку вашого губернатора
+    - бюджету вашого гаманця
+
+eco.work.texts.all:
+    - 'Ви допомогли Роскомнагляду заблокувати {item}, за що отримали виплату у розмірі {coins} монет'
+    - 'Ви допомогли владі {place1} заблокувати {item}, за що отримали виплату у розмірі {coins} монет'
+    - 'Ви відремонтували {item} за що вам заплатили {coins} монет'
+    - 'Ви виграли 1 мільйон монет в лотереї, але вас збив позашляховик. Після довготривалого лікування у вас залишилось {coins} монет'
+    - 'Яка вдача, ваш лотерейний білет приніс вам {coins} монет'
+    - 'У вас день народження, що ж у вас тепер є ще {coins} монет!'
+    - '{coins} - саме стільки монет ви зухвало вкрали з {place2}.'
+    - 'Ви помили посуд в ресторані, за що отримали {coins} монет'
+    - 'Ви продали {item} за {coins} монет'
+    - 'Ви полагодили {item} за {coins} монет'
+    - 'Ви створили {item} та продали за {coins} монет'
+    - 'Ви спіткнулись на вулиці та знайшли {item}, згодом продали за {coins} монет'
+    - "Ви хотіли продати {item}, але з {place2} вибіг шалений кіт який зі страху подарував вам страуса і {coins} монет"
+    # Easter Eggs:
+    - 'Translate is not provided. Got {coins}'
+    - 'Ви перевірили цей переклад від TL за що той висловлює вам дяку, а artem-6191 вам дарує {coins} монеток'
+
+eco.work.desc: "Виконати роботу\n\n:warning: Доступно лише раз на 2 години"
+
+eco.work.boost: "Прискорення x{boost}"
+
+eco.work.boost.got: "+{amount} монет"
+
+#                                 BALANCE COOMAND
+
+eco.balance.desc: "Дізнатись ваш чи чужий баланс"
+
+eco.balance.user: "Баланс {user}"
+
+eco.balance.count: "{coins} монет"
+
+eco.balance.coins: "Монет: {coins}"
+
+#eco.balance.credit: "Борг: {bank}"
+
+eco.balance.bank: "Борг: {bank}" # eco.balance.bank == eco.balance.credit
+
+#                                 DEPOSIT COMMAND (reserved place)
+
+eco.deposit.desc: "Покласти кошти на банківський рахунок \n :warning: В команди на момент перекладу немає функціоналу"
+
+#                                 CREDIT COMMAND
+
+eco.credit.desc: "Робота з кредитами"
+
+eco.credit.claim.desc: "Оформити кредит"
+
+eco.credit.claim.fail.already: "Ви не можете оформити новий кредит, поки не сплатите попередній."
+
+eco.credit.claim.fail.tooBig: "Сума кредиту не повинна перевищувати 1000 монет!"
+
+eco.credit.claim.ok: "Кредит оформлено успішно."
+
+eco.credit.claim.ok.footer: "Зверніть увагу, що сума до повернення збільшується кожну годину!"
+
+eco.credit.status.desc: "Статус кредиту"
+
+eco.credit.status.not_claimed: "У вас немає кредитів"
+
+eco.credit.status.total: "Сума кредиту"
+
+eco.credit.status.pay: "До оплати"
+
+eco.credit.status.time_passed: "Минуло годин"
+
+eco.credit.pay.desc: "Оплатити заборгованість за кредитом."
+
+eco.credit.pay.fail: "На вашому рахунка має бути не менше {amount} монет, щоб оплатити заборгованість."
+
+eco.credit.pay.ok: "Заборгованість за кредитом сплачена."
+
+eco.credit.claim.fail.tooSmall: "Ви можете взяти в кредит не менше 10 монет!"
+
+#                                 SHOP COMMAND
+
+eco.shop.desc: "Магазин"
+
+eco.shop.boost.title: "Прискорення"
+
+eco.shop.boost.desc: "Збільшує розмір виплати в команді *`{ctx.prefix}work`*"
+
+eco.shop.boost.cost: "Вартість: 1000 монет"
+
+#  Buy subcommand
+
+eco.shop.buy.desc: "Придбати товар."
+
+eco.shop.buy.not_enough: "У вас недостатньо монет на балансі!"
+
+eco.shop.buy.unknown: "Невідомий предмет - {item}. Доступні товари:"
+
+eco.shop.buy.ok: "Ви придбали товар **``{item}``** !"
+
+eco.shop.buy.error.boost: "Придбання скасоване: У вас максимальний рівень прискорення!"
+
+#                                 BOTINFO COMMAND
+
+botinfo.desc: "Отримати інформацію про бота (В якості аргумента має виступати числовий ID)"
+
+botinfo.loading: "Отримання інформації..."
+
+botinfo.unknown: "Не вдалось знайти інформацію про бота. Перевірте правильність ID."
+
+botinfo.application: "Інформація про додаток"
+
+botinfo.application.name: "Ім'я"
+
+botinfo.application.summary: "Опис"
+
+botinfo.bot: "Інформація про бота"
+
+botinfo.bot.public: "Публічний?"
+
+botinfo.bot.require_code_grant: "Чи є обов'язкова OAuth2 авторизація при добавленні?"
+
+botinfo.bot.name: "Нікнейм, ID"
+
+botinfo.bot.guild_count: "Округлена кількість серверів"
+
+#                                 PAY COMMAND
+
+eco.pay.desc: "Переказати комусь кошти."
+
+eco.pay.fail.0: "Мінімальна сума для переказу - 10 монет!"
+
+eco.pay.fail.1: "У ботів немає рахунків, ви не можете їм переказувати кошти!"
+
+eco.pay.fail.2: "Ви не можете переказати кошти собі ж!"
+
+eco.pay.fail.3: "Недостатньо коштів!"
+
+eco.pay.confirm: "Підтвердіть переказ {amount} монет на рахунок {user}"
+
+eco.pay.ok: "Переказ виконаний успішно."
+
+#                                 RESPECT COMMAND
+
+eco.respect.desc: "Підвищити репутацію для учасника\n\n:warning: Доступно раз в добу"
+
+eco.respect.fail.0: "Ви не можете підвищити власну репутацію!"
+
+eco.respect.fail.1: "Ви не можете підвищити репутацію ботів!"
+
+eco.respect.ok: "Репутація {user} підвищена. (+0.1)"
+
+#                                 LOTTORY COMMAND
+
+eco.lottery.desc: "Зіграти в моментальну лотерею\n\n:warning: Доступно раз в 30 секунд"
+
+eco.lottery.fail.0: "Недостатньо монет!"
+
+eco.lottery.fail.1: "Мінімальна сума - 45 монет"
+
+eco.lottery.won: "Ви виграли **{coins}** монет"
+
+eco.lottery.lose: "Ви програли **{coins}** монет"
+
+eco.lottery: "Моментальна лотерея"
+
+#                                 SUGGEST COMMAND
+
+suggest.desc: "З'явилась ідея для покращення нашого бота? Подайте її на сервер підтримки використовуючи цю команду\n\n:warning: Вказуйте ідеї російською мовою"
+
+suggest.sent: "Ваша ідея відправлена."
+
+suggest.sent.desc: "Дякуємо за запропоновану ідею.\n\n[Сервер технічної підтримки](https://discord.gg/Ac9SPXH) (Російськомовний)"
+
+#                                   EMBEDCOLOR COMMAND
+
+embedcolor.howTo: "Використовуйте *`{ctx.prefix}embedcolor [колір]`* для встановлення кольорів відповідей."
+
+##################################COGS HELP PAGES
+
+#                                 COG INFO                                 
+
+cogs.info.doc: "Інформація"
+
+cogs.info.desc: "Команди для роботи з інформацією."
+
+#                                 COG CONFIG
+
+cogs.config.doc: "Налаштування"
+
+cogs.config.desc: "Команди цієї категорії використовуються для кастомізації вашого власного профіля і вашого сервера."
+
+#                                 COG TOOLS
+
+cogs.tools.doc: "Утиліти"
+
+cogs.tools.desc: "Команди утиліт"
+
+#                                 COG MODERATION
+
+cogs.mod.doc: "Модерація"
+
+cogs.mod.desc: "Команди модерації."
+
+#                                 COG eco
+
+cogs.eco.doc: "Економіка"
+
+cogs.eco.desc: "Команди економіки."
+
+##################################OTHER
+
+credits.desc: "Висловлюємо подяку"
+credits.developers: "Розробникам:"
+credits.hosters: "Хостингу від:"
+credits.translators: "Перекладачам:"
